@@ -3,6 +3,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'firebase_options.dart';
 import 'screens/splash_screen.dart';
+import 'screens/auth/login_screen.dart';
+import 'screens/auth/signup_screen.dart';
+import 'screens/passenger/passenger_home_screen.dart';
+import 'screens/driver/driver_home_screen.dart';
 import 'providers/auth_provider.dart';
 import 'providers/ride_provider.dart';
 import 'providers/location_provider.dart';
@@ -34,8 +38,14 @@ class MyApp extends StatelessWidget {
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: ThemeMode.light,
-        home: const SplashScreen(),
         debugShowCheckedModeBanner: false,
+        home: const SplashScreen(),
+        routes: {
+          '/login': (context) => const LoginScreen(),
+          '/signup': (context) => const SignupScreen(),
+          '/passenger_home': (context) => const PassengerHomeScreen(),
+          '/driver_home': (context) => const DriverHomeScreen(),
+        },
       ),
     );
   }
