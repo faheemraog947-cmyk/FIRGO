@@ -1,0 +1,23 @@
+{
+  "name": "firgo",
+  "version": "1.0.0",
+  "description": "Pakistan's Premium Ride-Sharing Platform",
+  "scripts": {
+    "start": "flutter run",
+    "build-android": "flutter build apk --release",
+    "build-ios": "flutter build ipa --release",
+    "clean": "flutter clean",
+    "get-deps": "flutter pub get",
+    "analyze": "flutter analyze",
+    "test": "flutter test"
+  },
+  "keywords": [
+    "flutter",
+    "ride-sharing",
+    "pakistan",
+    "firebase",
+    "google-maps"
+  ],
+  "author": "Faheem Raogh",
+  "repository": "https://github.com/faheemraog947-cmyk/FIRGO"
+}
