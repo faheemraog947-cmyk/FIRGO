@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'ride_service.dart';
 import 'passenger_rating_dialog.dart';
+import '../services/call_service.dart';
 class HomeMapScreen extends StatefulWidget {
   const HomeMapScreen({super.key});
 
@@ -299,6 +300,18 @@ class _HomeMapScreenState extends State<HomeMapScreen> {
             ],
           ],
         ),
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: const Color(0xFF1F2833),
+        icon: const Icon(Icons.phone, color: Color(0xFFFFBF00)),
+        label: const Text('Call Driver', style: TextStyle(color: Color(0xFFFFBF00))),
+        onPressed: () {
+          CallService.showCallSheet(
+            context,
+            driverName: 'Ali Raza',
+            phoneNumber: '+923001234567',
+          );
+        },
+      ),
       ),
     );
   }
