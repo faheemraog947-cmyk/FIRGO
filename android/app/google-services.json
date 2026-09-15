@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "248782088583",
+    "project_id": "firgo06",
+    "storage_bucket": "firgo06.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248782088583:android:617772f6129abeafd48b22",
+        "android_client_info": {
+          "package_name": "Com.firgo.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB49whZ4FwY_uikCq2wfSYysOdtINaWtCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248782088583:android:0f4444c35141f6e5d48b22",
+        "android_client_info": {
+          "package_name": "com.example.my_first_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB49whZ4FwY_uikCq2wfSYysOdtINaWtCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248782088583:android:254f059e88b0ef59d48b22",
+        "android_client_info": {
+          "package_name": "com.example.my_first_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB49whZ4FwY_uikCq2wfSYysOdtINaWtCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

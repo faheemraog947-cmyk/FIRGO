@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+<<<<<<< HEAD
 import 'package:provider/provider.dart';
 import 'firebase_options.dart';
 import 'screens/splash_screen.dart';
@@ -19,6 +20,18 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   
+=======
+import 'firebase_options.dart';
+import 'phone_auth_screen.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (Firebase.apps.isEmpty) {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  }
+>>>>>>> bcbea81 (Added passenger rating dialog and updated driver rating calculation)
   runApp(const MyApp());
 }
 
@@ -27,6 +40,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => AuthProvider()),
@@ -50,3 +64,13 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+=======
+    return MaterialApp(
+      title: 'FIRGO',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
+      home: const PhoneAuthScreen(),
+    );
+  }
+}
+>>>>>>> bcbea81 (Added passenger rating dialog and updated driver rating calculation)

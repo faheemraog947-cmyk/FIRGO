@@ -5,9 +5,18 @@
 *.swp
 .DS_Store
 .atom/
+<<<<<<< HEAD
 .buildlog/
 .history
 .svn/
+=======
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+>>>>>>> bcbea81 (Added passenger rating dialog and updated driver rating calculation)
 
 # IntelliJ related
 *.iml
@@ -24,6 +33,7 @@
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+<<<<<<< HEAD
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
@@ -33,6 +43,13 @@
 
 # Web related
 lib/generated_plugin_registrant.dart
+=======
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+>>>>>>> bcbea81 (Added passenger rating dialog and updated driver rating calculation)
 
 # Symbolication related
 app.*.symbols
@@ -40,6 +57,7 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
+<<<<<<< HEAD
 # iOS/macOS
 **/ios/**/*.mode1v3
 **/ios/**/*.mode2v3
@@ -111,3 +129,12 @@ local.properties
 google-services.json
 GoogleService-Info.plist
 firebase_options.dart
+=======
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Widget Preview related
+.widget_preview/
+>>>>>>> bcbea81 (Added passenger rating dialog and updated driver rating calculation)
