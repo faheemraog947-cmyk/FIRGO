@@ -25,8 +25,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     final List<Widget> screens = [
       const HomeMapScreen(),
       ProfileScreen(),
-      const LeaderboardScreen(),
-      if (widget.isAdmin) const AdminDashboard(),
+      if (widget.isAdmin) AdminDashboard(),
     ];
 
     final List<BottomNavigationBarItem> navItems = [
