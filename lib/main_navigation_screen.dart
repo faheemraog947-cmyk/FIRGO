@@ -23,11 +23,11 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
   Widget build(BuildContext context) {
     // Regular users get 3 screens, Admins get 4 screens
     final List<Widget> screens = [
-      const HomeMapScreen(),
-      ProfileScreen(),
-      if (widget.isAdmin) AdminDashboard(),
-    ];
-
+  const HomeMapScreen(),
+  ProfileScreen(),
+  LeaderboardScreen(),
+  if (widget.isAdmin) AdminDashboard(),
+];
     final List<BottomNavigationBarItem> navItems = [
       const BottomNavigationBarItem(icon: Icon(Icons.map_rounded), label: 'Map'),
       const BottomNavigationBarItem(icon: Icon(Icons.person_rounded), label: 'Profile'),
